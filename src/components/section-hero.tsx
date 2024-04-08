@@ -4,7 +4,7 @@ import { GridContainer } from "./grid";
 
 export function Hero() {
   return (
-    <section className="relative w-full h-section-hero pt-16">
+    <section className="relative w-full h-section-hero pt-16 overflow-hidden">
       <GridContainer className="flex flex-col items-center">
         <div className="w-full max-w-text-hero text-center">
           <h3 className="text-sm tracking-wide font-medium uppercase text-gray-500 dark:text-gray-400 mb-4">
@@ -26,14 +26,16 @@ export function Hero() {
         </div>
 
         {/*Mockups*/}
-        <div className="absolute bottom-0 w-full max-w-area-mockups flex justify-between">
+        <div className="absolute -bottom-40 w-full max-w-area-mockups flex justify-between">
           <Image
             src={IphoneMockup}
-            alt=""
+            alt="Mockup"
+            className="relative -rotate-12 top-[1.1rem] left-[3.3rem]"
           />
           <Image
             src={IphoneMockup}
-            alt=""
+            alt="Mockup"
+            className="relative rotate-12 top-[1.1rem] right-[3.3rem]"
           />
         </div>
       </GridContainer>

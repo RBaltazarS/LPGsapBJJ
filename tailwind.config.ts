@@ -57,10 +57,14 @@ const config = {
         grid: "77.5rem",
         "text-hero": "66rem",
         "area-icons": "53.4375rem",
-        "area-mockups": "59.8125rem"
+        "area-mockups": "59.8125rem",
+        "area-cards": "82.5rem",
+        "area-carousel": "72.5rem",
       },
-      height:{
-        "section-hero": "54.625rem"
+      height: {
+        "section-hero": "54.6rem",
+        "area-cards": "35.1rem",
+        "area-carousel": "33.1rem",
       },
       borderRadius: {
         lg: "var(--radius)",

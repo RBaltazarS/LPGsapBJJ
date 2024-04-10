@@ -1,6 +1,10 @@
-import { SectionBenefits } from "@/components/section-beneficios";
+
 import Header from "@/components/section-header";
 import { Hero } from "@/components/section-hero";
+import Contact from "../components/section-contact";
+import About from "@/components/section-about";
+import Plans from "@/components/section-plans";
+
 
 
 export default function Home() {
@@ -8,7 +12,9 @@ export default function Home() {
     <main className="max-w-full">
       <Header />
       <Hero />
-      <SectionBenefits />
+      <About />
+      <Plans />
+      <Contact />
     </main>
   );
 }

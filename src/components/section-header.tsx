@@ -9,7 +9,7 @@ import { ModeToggle } from "@/components/toggle-dark-light"
 export default function Header() {
 
   return (
-    <header className="flex items-center h-14 px-4 md:px-6 w-full border-b">
+    <header className="fixed bg-slate-50 dark:bg-[#020817]  z-50 flex items-center h-14 px-4 md:px-6 w-full border-b">
       <Link className="flex items-center gap-2 text-lg font-semibold" href="#">
         <Image
           src={KimonoIcon}
@@ -20,16 +20,13 @@ export default function Header() {
         <span className="mr-4">Bjj</span>
       </Link>
       <nav className="ml-auto flex-1 hidden items-center gap-6 lg:flex">
-        <Link className="font-semibold hover:text-primary transition-all" href="#">
-          Benefícios
-        </Link>
-        <Link className="font-semibold hover:text-primary transition-all" href="#">
+        <Link className="font-semibold hover:text-primary transition-all" href="#about">
           Sobre Nós
         </Link>
-        <Link className="font-semibold hover:text-primary transition-all" href="#">
+        <Link className="font-semibold hover:text-primary transition-all" href="#plans">
           Planos
         </Link>
-        <Link className="font-semibold hover:text-primary transition-all" href="#">
+        <Link className="font-semibold hover:text-primary transition-all" href="#contact">
           Contatos
         </Link>
       </nav>
@@ -56,9 +53,6 @@ export default function Header() {
           <nav className="flex flex-col gap-4 py-4">
             <Link className="flex items-center gap-2 font-semibold hover:text-primary transition-all" href="#">
               Inicio
-            </Link>
-            <Link className="flex items-center gap-2 font-semibold hover:text-primary transition-all" href="#benefits">
-              Benefícios
             </Link>
             <Link className="flex items-center gap-2 font-semibold hover:text-primary transition-all" href="#about ">
               Sobre Nós
